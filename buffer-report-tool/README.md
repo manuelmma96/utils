@@ -56,7 +56,7 @@ node index.js [options]
 
 | Flag | Default | Description |
 |---|---|---|
-| `--input <dir>` | `../GPS_PACKETS` | Folder with the `.json` files to process |
+| `--input <dir>` | `../gps_packets` | Folder with the `.json` files to process |
 | `--output <file>` | `../output/reporte_consolidado_gps.xlsx` | Output Excel path (folder created automatically if missing) |
 | `--threshold <min>` | `5` | Gap threshold in minutes to count as "buffer" |
 | `--from <ISO date>` | (none) | Only consider records with Start >= this date |
@@ -123,5 +123,4 @@ Before processing each file, the script inspects its last bytes:
 This script's results were verified by independently running the same
 calculation with `jq` (C) and with Python (native `json`, no streaming) on
 the same files, getting identical counts and buffer durations across all
-three. See this folder/conversation's history for the details of that
-validation if you need to repeat it.
+three. 
