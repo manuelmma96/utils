@@ -1,0 +1,14 @@
+{
+  "name": "buffer-report-tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Analiza paquetes GPS (JSON) y genera un reporte Excel consolidado de brechas (buffer) entre la fecha del fix GPS y la fecha derivada del _id de Mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "JSONStream": "^1.3.5"
+  }
+}
